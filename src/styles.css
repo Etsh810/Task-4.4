@@ -3,3 +3,29 @@
 
 /* The deliberately simple notice cards only display receipt metadata; they do not implement an ownership-claim workflow. */
 .handover-note{font-size:10px;line-height:1.45;color:#746e61;margin:2px 0 10px;padding-top:4px;}
+.filter-hint{font-size:10px;line-height:1.45;color:#827d74;margin:-4px 0 12px;}
+.handover-note{border-left:3px solid #c9a45b;background:#fff5d6;padding:9px 10px;margin:5px 0 12px;color:#5f594c;}
+.handover-note strong{display:block;color:#383b37;margin-bottom:3px;}
+.menu-popup .delete-report{color:#a63d35;}
+.menu-popup .delete-report:hover{background:#fff0ee;border-radius:4px;}
+.board-report-button{align-self:center;}
+.status-tabs{display:flex;gap:8px;border-bottom:2px solid #ded8c7;margin:-3px 0 21px;}
+.status-tab{display:flex;align-items:center;gap:9px;border:0;border-bottom:3px solid transparent;background:transparent;padding:12px 15px;margin-bottom:-2px;color:#827d74;font-size:12px;font-weight:800;text-transform:uppercase;}
+.status-tab.active{border-bottom-color:#c17d45;color:#292f34;}
+.tab-count{display:grid;place-items:center;min-width:22px;height:22px;padding:0 5px;border-radius:11px;background:#ece7dc;color:#827d74;font-size:10px;}
+.status-tab.active .tab-count{background:#ffdf79;color:#3d382a;}
+.tab-results{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;align-items:start;}
+.tab-results .sticky{min-width:0;}
+.sticky-photo{display:block;width:100%;height:150px;object-fit:cover;border-radius:3px;margin:15px 0 12px;border:1px solid #e5dec9;background:#fff;}
+.no-results{padding:36px 24px;text-align:center;background:#fff;border:1px dashed #d8d0ba;border-radius:7px;color:#827d74;}
+.no-results h3{font:700 18px 'Space Grotesk';color:#343a3f;margin:0 0 8px;}
+.no-results p{font-size:12px;line-height:1.6;margin:0 auto 16px;max-width:360px;}
+.no-results button,.image-preview button{border:1px solid #d6d5cd;background:#fff;border-radius:4px;padding:9px 13px;font-size:11px;font-weight:700;}
+.photo-field input[type=file]{padding:10px;background:#faf9f5;border-style:dashed;}
+.photo-field input[type=file]::file-selector-button{border:1px solid #d6d1c5;border-radius:4px;background:white;padding:7px 10px;margin-right:10px;color:#3b403f;cursor:pointer;}
+.photo-field small{font-size:10px;font-weight:400;color:#827d74;}
+.image-preview{display:flex;align-items:flex-start;gap:12px;margin:-5px 0 18px;}
+.image-preview img{width:min(210px,65%);height:130px;object-fit:contain;background:#f5f3ec;border:1px solid #e2ded3;border-radius:4px;}
+.image-preview button{color:#a63d35;}
+@media(max-width:900px){.tab-results{grid-template-columns:1fr;}}
+@media(max-width:750px){.board-top{align-items:center;gap:12px}.board-top h2{font-size:23px}.status-tab{flex:1;justify-content:center;padding:10px 5px;font-size:10px;}.tab-results{grid-template-columns:1fr;}}
